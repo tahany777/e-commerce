@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-p-%@ddqv*(im7q#t^y@nwksx6e0bw^3#yd%y5t_3k7(o-s=)4c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -77,6 +77,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'jackets_django.wsgi.application'
 
+# CORS_ALLOWED_ORIGINS = ['http://127.0.0.1:8000', 'http://localhost:8000']
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
